@@ -1,0 +1,20 @@
+===== 1 ===================
+python -m venv env
+source env/Scripts/activate
+pip install Django
+pip freeze
+django-admin startproject todo_main .
+python manage.py runserver
+============================
+===== 2 ====================
+python manage.py migrate
+python manage.py createsuperuser
+============================
+===== 3 ====================
+python manage.py startapp todo
+============================
+===== 4 ====================
+python manage.py makemigrations
+python manage.py migrate
+python manage.py runserver
+====
